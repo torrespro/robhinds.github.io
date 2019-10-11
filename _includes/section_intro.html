@@ -1,11 +1,13 @@
-<div id="introBubble" class="rounded_panel txt_lightgrey">
-	<div class="top-rounded-panel grey-bg">
-		<h1 id="user-intro">Introduction &amp; Background</h1>
-	</div>
+{% if site.intro %}
+	<div id="introBubble" class="rounded_panel txt_lightgrey">
+		<div class="top-rounded-panel grey-bg">
+			<h1 id="user-intro">Introduction &amp; Background</h1>
+		</div>
 		<div class="content-rounded-panel">
-			<div>
-				{{site.introInfo}}
+			<div id="introBlurb">
+				{{site.intro}}
 			</div>
 			<br>
 		</div>
-</div>
+	</div>
+{% endif %}
